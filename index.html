@@ -26,15 +26,15 @@ Select ONE Additional Feature to Add
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🎥 What is my favorite chldhood show?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="Spongebob">Spongebob</option>
+          <option value="Gumball">Gumball</option>
+          <option value="Teen titans go">Teen titans go</option>
+          <option value="Fairly odd parents">Fairly odd parents</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check Show Answer</button>
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
@@ -66,12 +66,17 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "Spongebob") {
           $("#movie-text").text("YESSSS!");
         } 
-        else {
-          $("#movie-text").text("Try Again!");
+        if (answer === "Gumball"){
+          $("#movie-text").text("Love this show but nope");
         }
+        if (answer === "Teen-titans-go"){
+          $("#movie-text").text("Love this show but nope");
+
+        if (answer === "Fairly-odd-parents"){
+          $("#movie-text").text("Love this show but nope");
       });
 
       //=======================Book Question jQuery Code
