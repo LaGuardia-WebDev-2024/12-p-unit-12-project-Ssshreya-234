@@ -30,25 +30,25 @@ Select ONE Additional Feature to Add
         <select id="movie-answer">
           <option value="Spongebob">Spongebob</option>
           <option value="Gumball">Gumball</option>
-          <option value="Teen titans go">Teen titans go</option>
-          <option value="Fairly odd parents">Fairly odd parents</option>
+          <option value="Teen-titans-go">Teen titans go</option>
+          <option value="Fairly-odd-parents">Fairly odd parents</option>
         </select>
       </label>
       <button type="submit">Check Show Answer</button>
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
+      <img id="movie-pic">
     </div>
     <hr />
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What game do I always play in this class?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">Slither.io</option>
+          <option value="book2">Run</option>
+          <option value="book3">Papas Bakeria</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -68,15 +68,22 @@ Select ONE Additional Feature to Add
 
         if (answer === "Spongebob") {
           $("#movie-text").text("YESSSS!");
+          $("#movie-pic").attr("src","https://www.slashfilm.com/img/gallery/how-old-is-spongebob-squarepants-his-age-explained/intro-1750722731.jpg")
         } 
         if (answer === "Gumball"){
           $("#movie-text").text("Love this show but nope");
+          $("#movie-pic").attr("src","https://i.pinimg.com/736x/a5/fe/36/a5fe36be1836ec48e1964a72d07e34b2.jpg")
         }
         if (answer === "Teen-titans-go"){
-          $("#movie-text").text("Love this show but nope");
+          $("#movie-text").text("Nope");
+          $("#movie-pic").attr("src","")
+        }
 
         if (answer === "Fairly-odd-parents"){
-          $("#movie-text").text("Love this show but nope");
+          $("#movie-text").text("Nope");
+        }
+
+
       });
 
       //=======================Book Question jQuery Code
@@ -90,7 +97,7 @@ Select ONE Additional Feature to Add
           $("#book-text").text("YESSSS!");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#book-text").text("Naur");
         }
       });
       
