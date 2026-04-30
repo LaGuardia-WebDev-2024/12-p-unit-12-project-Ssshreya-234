@@ -65,22 +65,32 @@ Select ONE Additional Feature to Add
 
         var $answer = $("#movie-answer");
         var answer = $answer.val();
+        var $pic = $("#movie-pic");
 
+     // ====================Button #1
+          $("#Button1").click(function () {
+          $pic.slideDown();
+          });
+   
         if (answer === "Spongebob") {
           $("#movie-text").text("YESSSS!");
+          $pic.hide()
           $("#movie-pic").attr("src","https://www.slashfilm.com/img/gallery/how-old-is-spongebob-squarepants-his-age-explained/intro-1750722731.jpg")
+         $pic.slideDown(2000)
         } 
         if (answer === "Gumball"){
           $("#movie-text").text("Love this show but nope");
           $("#movie-pic").attr("src","https://i.pinimg.com/736x/a5/fe/36/a5fe36be1836ec48e1964a72d07e34b2.jpg")
+         
         }
         if (answer === "Teen-titans-go"){
           $("#movie-text").text("Nope");
-          $("#movie-pic").attr("src","")
+          $("#movie-pic").attr("src","https://static.wikia.nocookie.net/p__/images/0/0e/Teen_Titans_GO%21.png/revision/latest?cb=20220916185003&path-prefix=protagonist")
         }
 
         if (answer === "Fairly-odd-parents"){
           $("#movie-text").text("Nope");
+          $("#movie-pic").attr("src","https://m.media-amazon.com/images/M/MV5BY2RlNWMwZmUtMjM4MC00MDczLTk3NjktYTg2OTNiNThhNmNhXkEyXkFqcGc@._V1_.jpg")
         }
 
 
