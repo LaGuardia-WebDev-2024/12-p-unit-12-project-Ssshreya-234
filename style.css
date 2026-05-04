@@ -1,6 +1,9 @@
 #movie-result {
-  background: rgb(244, 98, 181);
-  border: 5px solid black;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210819/pngtree-starlight-bubbles-abstract-dreamy-gradient-pink-purple-background-image_761750.jpg");
+  background-size: cover;
+  background-repeat:no-repeat ;
+  background-attachment: fixed;
+  border: 5px solid rgba(201, 83, 83, 0);
   font-size: 24px;
   min-height: 160px;
   margin-top: 10px;
@@ -8,8 +11,11 @@
 }
 
 #book-result {
-  background: rgb(196, 159, 255);
-  border: 5px solid black;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210819/pngtree-starlight-bubbles-abstract-dreamy-gradient-pink-purple-background-image_761750.jpg");
+  background-size: cover;
+  background-repeat:no-repeat ;
+  background-attachment: fixed;
+  border: 5px solid rgba(201, 83, 83, 0);
   font-size: 24px;
   min-height: 160px;
   margin-top: 10px;
@@ -18,5 +24,5 @@
 
 hr {
   height: 5px;
-  background-color: black;
+  background-color: rgba(255, 111, 195, 0.932);
 }

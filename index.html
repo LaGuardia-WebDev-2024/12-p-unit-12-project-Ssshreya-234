@@ -48,7 +48,7 @@ Select ONE Additional Feature to Add
         <select id="book-answer">
           <option value="book1">Slither.io</option>
           <option value="book2">Run</option>
-          <option value="book3">Papas Bakeria</option>
+          <option value="book3">Wordle</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -56,6 +56,8 @@ Select ONE Additional Feature to Add
     <div id="book-result">
       <p id="book-text"></p>
     </div>
+    <div id="Button2"></div>
+    <button>fun</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       
@@ -110,7 +112,15 @@ Select ONE Additional Feature to Add
           $("#book-text").text("Naur");
         }
       });
+
       
+      
+        $("#button2").click(function(){
+          $("#button2").animate({
+            rotate: "75deg",
+          })
+        })
+
     </script>
   </body>
 
